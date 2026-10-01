@@ -1,0 +1,93 @@
+Continue a implementação do site de homenagem “Adriano & Cruz — Os Papais do T.I.” no projeto Webdev existente em:
+
+/home/ubuntu/adcruz
+
+Antes de começar, leia novamente o plano aprovado e atualizado em:
+
+/home/ubuntu/plan.md
+
+Não crie um novo projeto, não reinicialize o Webdev e não peça confirmação. Continue exatamente de onde o trabalho parou.
+
+Estado atual:
+
+- O projeto React 19 + TypeScript + Vite está em `/home/ubuntu/adcruz`.
+- O site deve ser totalmente em português do Brasil.
+- O projeto usa estética cyber-nostálgica, terminal retro-futurista, fundo escuro, grid técnico, azul/ciano para Cruz, roxo para Adriano e vermelho/âmbar para o Resgate de TCC.
+- A pasta de imagens está preparada em:
+  `/home/ubuntu/adcruz/client/public/images`
+- As imagens reais ainda não foram fornecidas. Não gere, busque ou invente imagens. Use apenas placeholders elegantes com a mensagem “IMAGEM A ADICIONAR”.
+- O arquivo central de dados já existe em:
+  `/home/ubuntu/adcruz/client/src/config/siteData.ts`
+- O manifesto de rotas já existe em:
+  `/home/ubuntu/adcruz/client/public/manus-routes.json`
+- O tema global já foi atualizado em:
+  `/home/ubuntu/adcruz/client/src/index.css`
+
+Arquivos já criados:
+
+- `client/src/config/siteData.ts`
+- `client/src/components/ImagePlaceholder.tsx`
+- `client/src/components/LightboxModal.tsx`
+- `client/src/components/BootScreen.tsx`
+- `client/src/components/Navbar.tsx`
+- `client/src/components/Hero.tsx`
+- `client/public/manus-routes.json`
+
+O componente `App.tsx` ainda precisa ser integrado.
+
+Próxima tarefa imediata:
+
+1. Criar `client/src/components/TeacherCards.tsx`.
+2. Implementar dois cards de personagem desbloqueáveis:
+   - ADRIANO:
+     - Especialista em Inteligência Artificial
+     - Habilidade especial: Gaita
+     - Características: Inteligência Artificial, Tecnologia, Criatividade e Gaita
+     - Barras de atributos com os valores definidos em `siteData.ts`
+     - Texto: “Capaz de explicar Inteligência Artificial e, em algum momento, aparecer tocando gaita.”
+     - Placeholder de foto usando `siteConfig.images.adrianoCard`
+   - CRUZ:
+     - Especialista em Lógica
+     - Habilidade especial: Faz Tudo
+     - Características: Lógica, Programação, Resolução de Problemas e Fazer Tudo
+     - Barras de atributos com os valores definidos em `siteData.ts`
+     - Texto: “Se existe um problema, provavelmente o Cruz dá um jeito.”
+     - Placeholder de foto usando `siteConfig.images.cruzCard`
+3. Usar visual de ficha de videogame/RPG com:
+   - Badge “PERSONAGEM DESBLOQUEADO”
+   - Status e tipo de classe
+   - Barras de habilidades
+   - Lista de perks
+   - Hover com elevação 3D suave e brilho específico para cada professor
+   - Layout responsivo para desktop e mobile
+4. Depois criar, nesta ordem:
+   - `TccRescue.tsx`
+   - `Disciplines.tsx`
+   - `InfiniteCarousel.tsx`
+   - `QuoteCards.tsx`
+   - `TechSkills.tsx`
+   - `JourneyTimeline.tsx`
+   - `EasterEggs.tsx`
+   - `TributeFinal.tsx`
+   - `Footer.tsx`
+5. Integrar tudo no `App.tsx`, incluindo:
+   - Tela de boot com controle para revelar o site
+   - Navbar
+   - Hero
+   - Todas as seções na ordem narrativa correta
+   - Lightbox global
+   - Toasts/easter eggs
+6. Preservar navegação suave, acessibilidade, alt text, `prefers-reduced-motion`, placeholders de imagem e layout mobile.
+7. Não alterar o conteúdo aprovado do plano sem necessidade.
+8. Rodar:
+   - `pnpm check`
+   - `pnpm build`
+9. Corrigir eventuais erros TypeScript ou de build.
+10. Iniciar o servidor de desenvolvimento na porta configurada, usando `pnpm dev`.
+11. Verificar a rota `/manus-routes.json`.
+12. Usar screenshot do Webdev para validar desktop e mobile.
+13. Confirmar que não há erros no console ou componentes quebrados.
+14. Atualizar o todo conforme cada etapa for concluída.
+15. Fazer checkpoint apenas depois que a aplicação estiver integrada e validada.
+
+Continue implementando de forma autônoma até o site estar completo e funcional.
